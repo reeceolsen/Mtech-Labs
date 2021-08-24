@@ -13,11 +13,11 @@ let currentHR = 147
 let isInTarget = currentHR > targetLowerBound && currentHR < targetUpperBound
 let isBelowTarget = currentHR < targetLowerBound
 let isAboveTarget = currentHR > targetUpperBound
-if isInTarget{
+if isInTarget {
     print("You're right on track!")
-} else if isBelowTarget{
+} else if isBelowTarget {
     print("You're doing great, but try to push it a bit!")
-} else{
+} else {
     print("You're on fire! Slow it down just a bit.")
 }
 /*:

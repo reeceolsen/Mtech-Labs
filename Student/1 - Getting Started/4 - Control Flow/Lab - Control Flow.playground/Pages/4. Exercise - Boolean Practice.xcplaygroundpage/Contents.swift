@@ -21,9 +21,9 @@ let temp = 82
 let isRaining = true
 let isSunny = true
 let isNiceWeather: Bool
-if isRaining == true{
+if isRaining == true {
     isNiceWeather = false
-} else if isSunny == true && temp >= 82{
+} else if isSunny == true && temp >= 82 {
     isNiceWeather = true
 } else{
     isNiceWeather = false
