@@ -13,8 +13,9 @@ struct User {
 let stepMaster = User(name: "StepMaster", stepsToday: 8394)
 let activeSitter = User(name: "ActiveSitter", stepsToday: 9132)
 let monsterWalker = User(name: "MonsterWalker", stepsToday: 7193)
+let walkEnthusiast = User(name: "WalkEnthusiast", stepsToday: 100000)
 
-let competitors = [stepMaster, activeSitter, monsterWalker]
+let competitors = [stepMaster, activeSitter, monsterWalker, walkEnthusiast]
 /*:
  The function below takes an array of `User` objects and returns the `User` object that has taken the most steps. The body of the function first declares a variable that is an optional `User`, then loops through all of the users in the array. Inside each iteration of the loop, it will check if `topCompetitor` has a value or not by unwrapping it. If `topCompetitor` doesn't have a value, then the current user in the iteration is assumed to have the highest score and is assigned to `topCompetitor`. If `topCompetitor` has a value, there is code to check whether the current user in the iteration has taken more steps than the user that is assigned to `topCompetitor`.
 
@@ -24,8 +25,8 @@ func getWinner(competitors: [User]) -> User? {
     var topCompetitor: User?
 
     for competitor in competitors {
-        if let topCompetitor = topCompetitor {
-            if competitor.stepsToday > topCompetitor.stepsToday {
+        if let somethingElse = topCompetitor {
+            if competitor.stepsToday > somethingElse.stepsToday {
                 topCompetitor = competitor
             }
         } else {
@@ -35,7 +36,7 @@ func getWinner(competitors: [User]) -> User? {
     return topCompetitor
 }
 
-
+print(getWinner(competitors: competitors))
 //:  Write a memberwise initializer inside the `User` struct above that uses variable shadowing for naming the parameters of the initializer.
 
 

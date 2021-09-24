@@ -10,9 +10,17 @@
  Call the method from outside of the struct and print the result to ensure that it works properly.
  */
 struct RunningWorkout {
+    static let meterInFeet = 3.28084
+    static let mileInMeters = 1600.0
+    
     var distance: Double
     var time: Double
     var elevation: Double
+    
+    static func mileTimefor(distance: Double, time: Double) -> Double {
+        return (time / distance / 1600.0)
+    }
+    print(RunningWorkout())
 }
 
 

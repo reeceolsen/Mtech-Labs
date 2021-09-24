@@ -22,6 +22,11 @@ class Spaceship {
             print("Sorry, your ship was hit one too many times. Do you want to play again?")
         }
     }
+    init(name:String, health: Int, position: Int) {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
 }
 
 class Fighter: Spaceship {
@@ -35,6 +40,11 @@ class Fighter: Spaceship {
             print("You have no more fire power.")
         }
     }
+    init(weapon: String, remainingFirePower: Int,name:String, health:Int, position:Int ){
+        self.weapon = weapon
+        self.remainingFirePower = remainingFirePower
+        super.init(name: name, health: health, position: position)
+    }
 }
 
 class ShieldedShip: Fighter {
@@ -47,31 +57,41 @@ class ShieldedShip: Fighter {
             super.wasHit()
         }
     }
+    init(shieldStrength:Int,weapon: String,remainingFirePower: Int, name:String, health: Int, position: Int){
+        self.shieldStrength = shieldStrength
+        super.init(weapon: weapon, remainingFirePower: remainingFirePower, name: name,health: health, position: position)
+    }
+    
+    
 }
 /*:
  Note that each class above has an error by the class declaration that says "Class has no initializers." Unlike structs, classes do not come with memberwise initializers because the standard memberwise initializers don't always play nicely with inheritance. You can get rid of the error by providing default values for everything, but it is common, and better practice, to simply write your own initializer. Go to the declaration of `Spaceship` and add an initializer that takes in an argument for each property on `Spaceship` and sets the properties accordingly.
 
  Then create an instance of `Spaceship` below called `falcon`. Use the memberwise initializer you just created. The ship's name should be "Falcon."
  */
-
+var falcon = Spaceship(name: "falcon", health: 10, position: 0)
 
 /*:
  Writing initializers for subclasses can get tricky. Your initializer needs to not only set the properties declared on the subclass, but also set all of the uninitialized properties on classes that it inherits from. Go to the declaration of `Fighter` and write an initializer that takes an argument for each property on `Fighter` and for each property on `Spaceship`. Set the properties accordingly. (Hint: you can call through to a superclass' initializer with `super.init` *after* you initialize all of the properties on the subclass).
 
  Then create an instance of `Fighter` below called `destroyer`. Use the memberwise initializer you just created. The ship's name should be "Destroyer."
  */
-
+var destroyer = Fighter(weapon: "laser", remainingFirePower: 9, name: "destroyer", health: 20, position: 0)
 
 /*:
  Now go add an initializer to `ShieldedShip` that takes an argument for each property on `ShieldedShip`, `Fighter`, and `Spaceship`, and sets the properties accordingly. Remember that you can call through to the initializer on `Fighter` using `super.init`.
 
  Then create an instance of `ShieldedShip` below called `defender`. Use the memberwise initializer you just created. The ship's name should be "Defender."
  */
-
+var defender = ShieldedShip(shieldStrength: 25, weapon: "laser", remainingFirePower: 5, name: "Defender", health: 20, position: 0)
 
 //:  Create a new constant named `sameShip` and set it equal to `falcon`. Print out the position of `sameShip` and `falcon`, then call `moveLeft()` on `sameShip` and print out the position of `sameShip` and `falcon` again. Did both positions change? Why? If both were structs instead of classes, would it be the same? Why or why not? Provide your answer in a comment or print statement below.
 
-
+let sameShip = falcon
+sameShip.moveLeft()
+falcon.moveRight()
+print(falcon.position)
+print(sameShip.position)
 /*:
  _Copyright © 2021 Apple Inc._
 

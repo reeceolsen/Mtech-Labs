@@ -3,7 +3,9 @@
  
  Create two constants, `nameInCaps` and `name`. Assign `nameInCaps` your name as a string literal with proper capitalization. Assign `name` your name as a string literal in all lowercase. Write an if-else statement that checks to see if `nameInCaps` and `name` are the same. If they are, print "The two strings are equal", otherwise print "The two strings are not equal."
  */
-
+let nameInCaps = "REECE"
+let name = "reece"
+nameInCaps == name ? print("The two strings are equal") : print("The two strings are not equal")
 
 /*:
  Write a new if-else statement that also checks to see if `nameInCaps` and `name` are the same. However, this time use the `lowercased()` method on each constant to compare the lowercase version of the strings. If they are equal, print the following statement using string interpolations:
@@ -14,7 +16,7 @@
  
 - "<INSERT LOWERCASED VERSION OF `nameInCaps` HERE> and <INSERT LOWERCASED VERSION OF `name` HERE> are not the same."
  */
-
+nameInCaps.lowercased() == name.lowercased() ? print("The two strings are equal") : print("The two strings are not equal")
 
 //:  Imagine you are looking through a list of names to find any that end in "Jr." Write an if statement below that will check if `junior` has the suffix "Jr.". If it does, print "We found a second generation name!"
 let junior = "Cal Ripken Jr."
