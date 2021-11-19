@@ -15,6 +15,7 @@
 		2B41449B26FB88A10049A84D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B41449926FB88A10049A84D /* LaunchScreen.storyboard */; };
 		2B4144A626FB88A20049A84D /* applepieprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4144A526FB88A20049A84D /* applepieprojectTests.swift */; };
 		2B4144B126FB88A20049A84D /* applepieprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4144B026FB88A20049A84D /* applepieprojectUITests.swift */; };
+		2B742E11270372D300AE1C39 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B742E10270372D300AE1C39 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2B4144AC26FB88A20049A84D /* applepieprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = applepieprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B4144B026FB88A20049A84D /* applepieprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applepieprojectUITests.swift; sourceTree = "<group>"; };
 		2B4144B226FB88A20049A84D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B742E10270372D300AE1C39 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2B41448E26FB88A10049A84D /* AppDelegate.swift */,
 				2B41449026FB88A10049A84D /* SceneDelegate.swift */,
 				2B41449226FB88A10049A84D /* ViewController.swift */,
+				2B742E10270372D300AE1C39 /* Game.swift */,
 				2B41449426FB88A10049A84D /* Main.storyboard */,
 				2B41449726FB88A10049A84D /* Assets.xcassets */,
 				2B41449926FB88A10049A84D /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				2B41449326FB88A10049A84D /* ViewController.swift in Sources */,
 				2B41448F26FB88A10049A84D /* AppDelegate.swift in Sources */,
 				2B41449126FB88A10049A84D /* SceneDelegate.swift in Sources */,
+				2B742E11270372D300AE1C39 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

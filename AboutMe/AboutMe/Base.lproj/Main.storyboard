@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KqB-qa-kOI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Where I was-->
+        <scene sceneID="5wV-WP-Klb">
+            <objects>
+                <viewController id="bff-AL-zEX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kGw-0a-bxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I was born in Arizona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwm-ZL-QSP">
+                                <rect key="frame" x="10" y="54" width="394" height="749"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NUQ-s0-XxP"/>
+                        <color key="backgroundColor" red="0.48589804737838271" green="0.15677495781965908" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NUQ-s0-XxP" firstAttribute="bottom" secondItem="cwm-ZL-QSP" secondAttribute="bottom" constant="10" id="0mk-yp-PUO"/>
+                            <constraint firstItem="NUQ-s0-XxP" firstAttribute="trailing" secondItem="cwm-ZL-QSP" secondAttribute="trailing" constant="10" id="6XO-v9-80K"/>
+                            <constraint firstItem="cwm-ZL-QSP" firstAttribute="top" secondItem="NUQ-s0-XxP" secondAttribute="top" constant="10" id="AFI-r5-TA9"/>
+                            <constraint firstItem="cwm-ZL-QSP" firstAttribute="leading" secondItem="NUQ-s0-XxP" secondAttribute="leading" constant="10" id="Gbo-Wd-bvV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Where I was" image="snow" catalog="system" selectedImage="snow" id="UZq-Rm-FoB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYx-mC-RjY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="-892"/>
+        </scene>
+        <!--My name-->
+        <scene sceneID="lTy-7r-iGL">
+            <objects>
+                <viewController id="7bN-UZ-ugH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8yh-ZK-uoz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My name is Reece, I am 17 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bQ-Ey-sSC">
+                                <rect key="frame" x="10" y="54" width="394" height="749"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xF2-Gg-d5y"/>
+                        <color key="backgroundColor" red="0.035778581157355042" green="0.41825968948836179" blue="0.34081092760952758" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xF2-Gg-d5y" firstAttribute="bottom" secondItem="1bQ-Ey-sSC" secondAttribute="bottom" constant="10" id="FJg-XE-iQJ"/>
+                            <constraint firstItem="1bQ-Ey-sSC" firstAttribute="leading" secondItem="xF2-Gg-d5y" secondAttribute="leading" constant="10" id="aNu-Ye-yU9"/>
+                            <constraint firstItem="1bQ-Ey-sSC" firstAttribute="top" secondItem="xF2-Gg-d5y" secondAttribute="top" constant="10" id="d7o-NV-l0p"/>
+                            <constraint firstItem="xF2-Gg-d5y" firstAttribute="trailing" secondItem="1bQ-Ey-sSC" secondAttribute="trailing" constant="10" id="zyx-ih-AC1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My name" image="cloud.fog" catalog="system" selectedImage="cloud.fog" id="1dE-lY-iA9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZaC-Vy-huo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340.57971014492756" y="-1533.4821428571429"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tSU-EG-wSl">
+            <objects>
+                <tabBarController id="KqB-qa-kOI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" itemPositioning="centered" id="6cC-7U-Tyj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7bN-UZ-ugH" kind="relationship" relationship="viewControllers" id="E5N-86-xFV"/>
+                        <segue destination="bff-AL-zEX" kind="relationship" relationship="viewControllers" id="O2X-S4-Fph"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1C9-us-ppe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9UO-Uc-hru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1336" y="-631"/>
+        </scene>
+        <!--Where I am now-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I now live in Highland Utah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPc-xi-Ht2">
+                                <rect key="frame" x="10" y="54" width="394" height="749"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.3697267739582738" green="0.32530131373239524" blue="0.51370019027867264" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qPc-xi-Ht2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Df7-j4-ANO"/>
+                            <constraint firstItem="qPc-xi-Ht2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="PtT-90-azL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qPc-xi-Ht2" secondAttribute="trailing" constant="10" id="hf2-5h-Sgm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPc-xi-Ht2" secondAttribute="bottom" constant="10" id="lbX-N0-2ET"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Where I am now" image="flame" catalog="system" selectedImage="flame" id="X9X-ZS-mhj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="-260"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.fog" catalog="system" width="128" height="119"/>
+        <image name="flame" catalog="system" width="108" height="128"/>
+        <image name="snow" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

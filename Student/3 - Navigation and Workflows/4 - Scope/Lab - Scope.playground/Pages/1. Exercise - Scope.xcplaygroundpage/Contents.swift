@@ -21,16 +21,25 @@ print("The final value of x is \(x)")
 
 //:  In the body of the function `greeting` below, use variable shadowing when unwrapping `greeting`. If `greeting` is successfully unwrapped, print a statement that uses the given greeting to greet the given name (i.e. if `greeting` successfully unwraps to have the value "Hi there" and `name` is `Sara`, print "Hi there, Sara."). Otherwise, use "Hello" to print a statement greeting the given name. Call the function twice, once passing in a value for greeting, and once passing in `nil`.
 func greeting(greeting: String?, name: String) {
-
+    if let greeting = greeting {
+        print(greeting + name)
+    } else {
+        print("hello " + name)
+    }
 }
 
-
+greeting(greeting: "Hi ", name: "bob")
+greeting(greeting: nil, name: "billy")
 //:  Create a class called `Car`. It should have properties for `make`, `model`, and `year` that are of type `String`, `String`, and `Int`, respectively. Since this is a class, you'll need to write your own memberwise initializer. Use shadowing when naming parameters in your initializer.
 class Car {
     var make: String
     var model: String
     var year: Int
-    init(
+    init(make: String, model:String, year:Int){
+        self.make = make
+        self.model = model
+        self.year = year
+    }
 }
 
 /*:
